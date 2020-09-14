@@ -1,3 +1,24 @@
+* {
+   margin: 0;
+   padding: 0;
+ }
+ html,
+ body {
+   height: 100%;
+ }
+ .wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+ }
+ .content {
+   flex: 1 0 auto;
+ }
+ .footer {
+   flex: 0 0 auto;
+ }
+
+
 html{
    box-sizing: border-box;
 }
@@ -7,10 +28,22 @@ html{
    box-sizing: inherit;
 }
 body{
-   background-color: red;
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-weight: 700;
+   color: #000;
+   font-size: 14px;
+   line-height: 24px;
+   text-transform: uppercase;
+   
 }
 a{
-   display: inline-block;
+   text-decoration: none;
+   font-weight: 700;
+  
+}
+h1,h2,h3,h4,h5,h6,p{
+   padding: 0;
+   margin: 0;
 }
 ul,
 li{
@@ -19,5 +52,83 @@ li{
    list-style: none;
 }
 .container{
-   
+   max-width: 960px;
+   padding: 0 15px;
+   margin: 0 auto;
 }
+
+
+.btn-page{
+   font-weight: 700;
+   color: #fff;
+   background-color: #000;
+   transition: all .3s;
+   border: none;
+   outline: none;
+   line-height: 18px;
+   font-size: 14px;
+   padding: 13px 0;
+   text-transform: uppercase;
+   cursor: pointer;
+   &:hover{
+      background-color: #663d15;
+   }
+}
+
+
+
+.breadcrumbs{
+   &__inner{
+      padding: 60px 0;
+   }
+   &__title{
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 30px;
+   }
+   &__list{
+      li{
+         display: inline-block;
+         position: relative;
+         &:last-child{
+            a,
+            span{
+               color: #aba9a7;
+            }
+         }
+         a{
+            color: #000;
+            &:hover{
+               color: #663d15;
+            }
+         }
+         & + li{
+            padding-left: 40px;
+            &::before{
+               content: '';
+               position: absolute;
+               width: 8px;
+               height: 8px;
+               background-color: #000;
+               left: 16px;
+               transform: rotate(45deg);
+               top: 7px;
+            }
+         }
+      }
+   }
+}
+
+.main__title{
+   font-size: 30px;
+   line-height: 42px;
+   margin-bottom: 25px;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ td,
+ th {
+   padding: 0;
+ }
