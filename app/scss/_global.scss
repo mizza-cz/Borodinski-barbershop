@@ -78,9 +78,7 @@ li{
 
 
 .breadcrumbs{
-   &__inner{
-      padding: 60px 0;
-   }
+   margin-bottom: 50px;
    &__title{
       font-size: 30px;
       line-height: 42px;
@@ -132,3 +130,20 @@ table {
  th {
    padding: 0;
  }
+
+ .main{
+   background-image: url(../images/section-bg.jpg);
+   padding-bottom: 80px;
+   height: 100%;
+   padding-top: 60px;
+ }
+ .visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}

@@ -4,10 +4,10 @@
 
 
 @media(max-width: 900px){
-   .main-price__title{
+   .price__title{
       font-size: 45px;
    }
-   .main-price__title::after, .main-price__title::before{
+   .price__title::after, .price__title::before{
       width: 15%;
    }
 }
@@ -23,20 +23,23 @@
    .about__line-text + .about__line-text{
       margin-top: 30px;
    }
-   .main-price__title::after, .main-price__title::before{
+   .price__title::after, .price__title::before{
       display: none;
    }
 }
 
 @media(max-width: 750px){
-   
-   .main-price__box{
+   .main{
+      padding-bottom: 50px;
+      height: auto;
+   }
+   .price__box{
       flex-wrap: wrap;
    }
    .resources{
       max-width: 100%;
    }
-   .price,
+   .price__box,
    .resources__list{
       margin-bottom: 50px;
    }
@@ -67,16 +70,28 @@
 }
 
 @media(max-width: 600px){
+   .news__info-title{
+      margin-left: 100px;
+   }
+   .news__item-datetime{
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: -20px;
+   }
+   .news__item{
+      flex-wrap: wrap-reverse;
+      flex-direction: row;
+   }
    .resources__title, .price__title, .about__title{
       font-size: 22px;
       margin-bottom: 30px;
    }
-   .main-price__title{
+   .price__title{
       font-size: 40px;
       margin-bottom: 40px;
    }
    .breadcrumbs__inner{
-      padding: 30px 0;
+      padding: 0;
       margin-bottom: 10px;
    }
    .breadcrumbs__title{
@@ -104,10 +119,11 @@
 }
 
 @media(max-width: 480px){
-   .main-price__title{
+   .main{
+      padding-top: 30px;
+   }
+   .price__title{
       font-size: 36px;
    }
-   .main-price{
-      padding-bottom: 50px;
-   }
+   
 }
