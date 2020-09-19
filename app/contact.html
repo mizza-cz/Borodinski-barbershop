@@ -11,68 +11,156 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="container">
-         <div class="header__inner">
-            <div class="header__btn">
-               <span></span>
-               <span></span>
-               <span></span>
+   <div class="wrapper">
+      <div class="content">
+         <header class="header">
+            <div class="container">
+               <div class="header__inner">
+                  <div class="header__btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <nav class="menu">
+                     <a class="header__logo" href="index.html">
+                        <img src="images/icon/header__logo.png" width="111" height="24" alt="«Borodinski">
+                     </a>
+                     <ul class="menu__list">
+                        <li><a class="menu__list-item " href="news.html">zprávy</a></li>
+                        <li><a class="menu__list-item" href="price-page.html">ceník</a></li>
+                        <li><a class="menu__list-item" href="shop.html">Obchod</a></li>
+                        <li><a class="menu__list-item active-page" href="contact.html">kontakty</a></li>
+                     </ul>
+                  </nav>
+                  <div class="register">
+                     <a class="register__link" href="#">přihlásit</a>
+                  </div>
+               </div>
             </div>
-            <nav class="menu">
-               <a class="header__logo" href="index.html">
-                  <img src="images/icon/header__logo.png" width="111" height="24" alt="«Borodinski">
-               </a>
-               <ul class="menu__list">
+         </header>
 
-                  <li><a class="menu__list-item" href="#">informace</a></li>
-                  <li><a class="menu__list-item " href="#">zprávy</a></li>
-                  <li><a class="menu__list-item" href="#">ceník</a></li>
-                  <li><a class="menu__list-item" href="#">Obchod</a></li>
-                  <li><a class="menu__list-item active-page" href="#">kontakty</a></li>
+
+         <main class="main">
+            <div class="breadcrumbs">
+               <div class="container">
+                  <div class="breadcrumbs__inner">
+                     <h5 class="main__title">kontakty</h5>
+                     <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                           <a href="#">Úvod</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <span>kontakty</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <section class="contacts">
+               <div class="container">
+                  <div class="contacts__inner">
+                     <h2 class="content-title">
+                        pracovní doba našeho holičství:
+                     </h2>
+                     <table class="contacts__table">
+                        <tr>
+                           <td>pondělí — pátek</td>
+                           <td>10:00 — 21:00</td>
+                           <td rowspan="2">bez přestávek</td>
+                        </tr>
+                        <tr>
+                           <td>sobota — neděle</td>
+                           <td>10:00 — 19:00</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="contacts__info">
+                     <h2 class="content-title">
+                        Jak se dostanete:
+                     </h2>
+                     <p class="contacts__info-text">
+                        čekáme na vás na adrese:<br>
+                        nám. Svobody 96, 602 00 Brno-střed
+                     </p>
+                     <p class="contacts__info-text">
+                        telefon pro objednaní:<br>
+                        <a class="contacts__info-link" href="tel:+420775521123">+420 775 521 123 </a>
+                     </p>
+                     <iframe id="map" class="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.2689468555895!2d16.605137015686324!3d49.19545737932199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712945096586c67%3A0x4943910cef55cff0!2sn%C3%A1m.%20Svobody%2096%2F2%2C%20602%2000%20Brno-st%C5%99ed-Brno-m%C4%9Bsto!5e0!3m2!1scs!2scz!4v1600416223562!5m2!1scs!2scz"
+                        width="940" height="500"></iframe>
+                  </div>
+               </div>
+            </section>
+         </main>
+
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <ul class="footer__address">
+                  <li>Barbershop "Borodinski"</li>
+                  <li>nám. Svobody 96, 602 00 Brno-střed</li>
+                  <li><a class="footer__address-link " href="#">Jak nás najdete?</a></li>
+                  <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
                </ul>
-            </nav>
-            <div class="register">
-               <a class="register__link" href="#">přihlásit</a>
+
+               <div class="footer__social">
+                  <div class="footer__social-title">
+                     Buďme přátelé
+                  </div>
+                  <div class="footer__box">
+                     <a class="footer__box-icon icon-twitter" href="#"></a>
+                     <a class="footer__box-icon icon-facebook-f" href="#"></a>
+                     <a class="footer__box-icon icon-instagram" href="#"></a>
+                  </div>
+
+               </div>
+
+               <div class="copyright">
+                  <div class="copyright__title">
+                     vývojář:
+                  </div>
+                  <a class="copyright__link" href="#">Mizza</a>
+               </div>
             </div>
          </div>
-      </div>
-   </header>
+      </footer>
 
 
+      <div class="modal-overlay"></div>
 
+      <div class="modal-content-form">
+         <h1 class="main__title">osobní účet</h1>
+         <p class="login__subtitle">ZADEJTE SVÉ jméno A HESLO</p>
+         <form class="login-form" action="login.html" method="post">
+            <div class="form-field-group login-name">
+               <input id="login-field" class="login-field  login-form-field  form-field" type="text" name="login"
+                  placeholder="JMÉNO" required>
+            </div>
 
-   <footer class="footer">
-      <div class="container">
-         <div class="footer__inner">
-            <ul class="footer__address">
-               <li>Barbershop "Borodinski"</li>
-               <li>nám. Svobody 96, 602 00 Brno-střed</li>
-               <li><a class="footer__address-link " href="#">Jak nás najdete?</a></li>
-               <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
-            </ul>
-
-            <div class="footer__social">
-               <div class="footer__social-title">
-                  Buďme přátelé
-               </div>
-               <div class="footer__box">
-                  <a class="footer__box-icon icon-twitter" href="#"></a>
-                  <a class="footer__box-icon icon-facebook-f" href="#"></a>
-                  <a class="footer__box-icon icon-instagram" href="#"></a>
-               </div>
+            <div class="form-field-group login-pass ">
+               <input id="password-field" class="password-field  login-form-field  form-field" type="password"
+                  name="password" placeholder="Heslo" required>
 
             </div>
 
-            <div class="copyright">
-               <div class="copyright__title">
-                  vývojář:
-               </div>
-               <a class="copyright__link" href="#">Mizza</a>
-            </div>
-         </div>
+            <label class="checkbox-field">
+               <input class="custom-checkbox  visually-hidden" type="checkbox" name="remember" checked>
+               <span class="checkbox-replacer"></span>
+               zapamatovat
+            </label>
+
+            <a class="restore-link" href="#">připomenout heslo</a>
+            <button class="btn" type="submit">přihlásit se</button>
+         </form>
+         <p>poprvé na našem webu? <a class="sign-up-link" href="#">Registrovat!</a></p>
       </div>
-   </footer>
+   </div>
+
+
+
 
 
 

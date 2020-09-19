@@ -11,208 +11,273 @@
 </head>
 
 <body>
-
-   <header class="header">
-      <div class="container">
-         <div class="header__inner">
-            <div class="header__btn">
-               <span></span>
-               <span></span>
-               <span></span>
+   <div class="wrapper">
+      <div class="content">
+         <header class="header">
+            <div class="container">
+               <div class="header__inner">
+                  <div class="header__btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <nav class="menu">
+                     <a class="header__logo" href="index.html">
+                        <img src="images/icon/header__logo.png" width="111" height="24" alt="«Borodinski">
+                     </a>
+                     <ul class="menu__list">
+                        <li><a class="menu__list-item" href="news.html">zprávy</a></li>
+                        <li><a class="menu__list-item" href="price-page.html">ceník</a></li>
+                        <li><a class="menu__list-item active-page" href="shop.html">Obchod</a></li>
+                        <li><a class="menu__list-item" href="contact.html">kontakty</a></li>
+                     </ul>
+                  </nav>
+                  <div class="register">
+                     <a class="register__link" href="#">přihlásit</a>
+                  </div>
+               </div>
             </div>
-            <nav class="menu">
-               <a class="header__logo" href="index.html">
-                  <img src="images/icon/header__logo.png" width="111" height="24" alt="«Borodinski">
-               </a>
-               <ul class="menu__list">
+         </header>
 
-                  <li><a class="menu__list-item" href="#">informace</a></li>
-                  <li><a class="menu__list-item" href="#">zprávy</a></li>
-                  <li><a class="menu__list-item" href="#">ceník</a></li>
-                  <li><a class="menu__list-item active-page" href="#">Obchod</a></li>
-                  <li><a class="menu__list-item" href="#">kontakty</a></li>
-               </ul>
-            </nav>
-            <div class="register">
-               <a class="register__link" href="#">přihlásit</a>
+         <main class="main">
+
+
+            <div class="breadcrumbs">
+               <div class="container">
+                  <div class="breadcrumbs__inner">
+                     <h5 class="main__title">Prostředky pro péči</h5>
+                     <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                           <a href="#">Úvod</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <a href="#">Obchod</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <span>Prostředky pro péči</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-         </div>
+
+            <section class="shop">
+               <div class="container">
+                  <div class="shop__inner">
+                     <form class="form-shop" method="GET" action="shop.html">
+                        <fieldset>
+                           <legend class="content-title">výrobci:</legend>
+                           <label class="checkbox-field">
+                              <input class="custom-checkbox  visually-hidden" type="checkbox" name="vendor-baxter">
+                              <span class="checkbox-replacer"></span>
+                              Baxter of California
+                           </label>
+                           <label class="checkbox-field">
+                              <input class="custom-checkbox  visually-hidden" type="checkbox" name="vendor-suavecito">
+                              <span class="checkbox-replacer"></span>
+                              Suavecito
+                           </label>
+                           <label class="checkbox-field">
+                              <input class="custom-checkbox  visually-hidden" type="checkbox"
+                                 name="vendor-american-crew">
+                              <span class="checkbox-replacer"></span>
+                              American Crew
+                           </label>
+                           <label class="checkbox-field">
+                              <input class="custom-checkbox  visually-hidden" type="checkbox" name="vendor-all" checked>
+                              <span class="checkbox-replacer"></span>
+                              Vše
+                           </label>
+                        </fieldset>
+
+                        <fieldset>
+                           <legend class="content-title">skupiny produktů:</legend>
+                           <label class="radio-btn-field">
+                              <input class="custom-radio-btn  visually-hidden" type="radio" name="goods-type"
+                                 value="shave-tools">
+                              <span class="radio-replacer"></span>
+                              Holicí příslušenství
+                           </label>
+                           <label class="radio-btn-field">
+                              <input class="custom-radio-btn  visually-hidden" type="radio" name="goods-type"
+                                 value="care-tools">
+                              <span class="radio-replacer"></span>
+                              Výrobky pro péči
+                           </label>
+                           <label class="radio-btn-field">
+                              <input class="custom-radio-btn  visually-hidden" type="radio" name="goods-type"
+                                 value="accessories">
+                              <span class="radio-replacer"></span>
+                              Příslušenství
+                           </label>
+                           <label class="radio-btn-field">
+                              <input class="custom-radio-btn  visually-hidden" type="radio" name="goods-type"
+                                 value="all" checked>
+                              <span class="radio-replacer"></span>
+                              vše
+                           </label>
+                        </fieldset>
+
+                        <button class="btn" type="submit" name="goods-filter-btn">Ukázat</button>
+                     </form>
+
+                     <div class="shop-products">
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>CESTOVNÍ SADA</span> «Baxter of California»</h3>
+                              <img src="images/shop-item-1.jpg" width="220" height="165"
+                                 alt="Набор для путешествий «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">1500 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>Hydratační kondicionér</span> «Baxter of
+                                 California»</h3>
+                              <img src="images/shop-item-2.jpg" width="220" height="165"
+                                 alt="Увлажняющий кондиционер «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">400 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>Gel na vlasy</span> «Suavecito»</h3>
+                              <img src="images/shop-item-3.jpg" width="220" height="165"
+                                 alt="Набор для путешествий «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">300 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>Jíl na úpravu vlasů</span> «American Crew»</h3>
+                              <img src="images/shop-item-4.jpg" width="220" height="165"
+                                 alt="Набор для путешествий «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">700 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>Gel na vlasy</span> «American Crew»</h3>
+                              <img src="images/shop-item-5.jpg" width="220" height="165"
+                                 alt="Набор для путешествий «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">500 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+
+                        <article class="shop-products__item">
+                           <a class="shop-products__header" href="product.html" title="Перейти на страницу товара">
+                              <h3 class="shop-products__title"><span>Holicí souprava</span> «Baxter of California»</h3>
+                              <img src="images/shop-item-6.jpg" width="220" height="165"
+                                 alt="Набор для путешествий «Baxter of California»">
+                           </a>
+                           <div class="product__price">
+                              <span class="product__price-value">2500 Kč</span>
+                              <a class="product__price-link  btn" href="#">koupit</a>
+                           </div>
+                        </article>
+                        <div class="paggination">
+                           <ul class="paggination__list">
+                              <li><a class="active" href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+
+
+
+         </main>
       </div>
-   </header>
-
-   <main class="catalog-page">
 
 
-      <div class="breadcrumbs">
+      <footer class="footer">
          <div class="container">
-            <div class="breadcrumbs__inner">
-               <h5 class="breadcrumbs__title">Prostředky pro péči</h5>
-               <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__list-item">
-                     <a href="#">Úvod</a>
-                  </li>
-                  <li class="breadcrumbs__list-item">
-                     <a href="#">Obchod</a>
-                  </li>
-                  <li class="breadcrumbs__list-item">
-                     <span>Prostředky pro péči</span>
-                  </li>
+            <div class="footer__inner">
+               <ul class="footer__address">
+                  <li>Barbershop "Borodinski"</li>
+                  <li>nám. Svobody 96, 602 00 Brno-střed</li>
+                  <li><a class="footer__address-link " href="#">Jak nás najdete?</a></li>
+                  <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
                </ul>
-            </div>
-         </div>
-      </div>
 
-      <div class="container">
-         <div class="catalog-page__inner">
-            <aside class="aside">
-               <form class="aside-form">
-                  <div class="aside-form__box">
-                     <div class="aside-form__box-title">výrobce :</div>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-checkbox" type="checkbox" name="checkbox">
-                     </label>
+               <div class="footer__social">
+                  <div class="footer__social-title">
+                     Buďme přátelé
                   </div>
-                  <div class="aside-form__box">
-                     <div class="aside-form__box-title">Kategorie zboží :</div>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-radio" type="radio" name="radio">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-radio" type="radio" name="radio">
-                     </label>
-                     <label class="aside-form__box-label">
-                        <input class="aside-form__box-radio" type="radio" name="radio">
-                     </label>
+                  <div class="footer__box">
+                     <a class="footer__box-icon icon-twitter" href="#"></a>
+                     <a class="footer__box-icon icon-facebook-f" href="#"></a>
+                     <a class="footer__box-icon icon-instagram" href="#"></a>
                   </div>
-                  <button class=" aside-btn btn-pag" type="submit">ukázat</button>
-               </form>
-            </aside>
 
-            <div class="catalog">
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
                </div>
 
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
-               </div>
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
-               </div>
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
-               </div>
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
-               </div>
-               <div class="catalog__item-wrapper">
-                  <a class="catalog__item" href="#">
-                     <img class="catalog__item-img" src="images/catalog/catalog-img1.jpg" alt="">
-                     <p class="catalog__item-name"></p>
-                     <p class="catalog__item-description"></p>
-                     <div class="catalog__btn">
-                        <p class="catalog__btn-price"></p>
-                        <a class="catalog__btn-link" href="#">koupit</a>
-                     </div>
-                  </a>
+               <div class="copyright">
+                  <div class="copyright__title">
+                     vývojář:
+                  </div>
+                  <a class="copyright__link" href="#">Mizza</a>
                </div>
             </div>
          </div>
-      </div>
+      </footer>
 
+      <div class="modal-overlay"></div>
+      <div class="modal-content-form">
+         <h1 class="main__title">osobní účet</h1>
+         <p class="login__subtitle">ZADEJTE SVÉ jméno A HESLO</p>
+         <form class="login-form" action="login.html" method="post">
+            <div class="form-field-group login-name">
+               <input id="login-field" class="login-field  login-form-field  form-field" type="text" name="login"
+                  placeholder="JMÉNO" required>
+            </div>
 
-
-
-   </main>
-
-
-
-   <footer class="footer">
-      <div class="container">
-         <div class="footer__inner">
-            <ul class="footer__address">
-               <li>Barbershop "Borodinski"</li>
-               <li>nám. Svobody 96, 602 00 Brno-střed</li>
-               <li><a class="footer__address-link " href="#">Jak nás najdete?</a></li>
-               <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
-            </ul>
-
-            <div class="footer__social">
-               <div class="footer__social-title">
-                  Buďme přátelé
-               </div>
-               <div class="footer__box">
-                  <a class="footer__box-icon icon-twitter" href="#"></a>
-                  <a class="footer__box-icon icon-facebook-f" href="#"></a>
-                  <a class="footer__box-icon icon-instagram" href="#"></a>
-               </div>
+            <div class="form-field-group login-pass ">
+               <input id="password-field" class="password-field  login-form-field  form-field" type="password"
+                  name="password" placeholder="Heslo" required>
 
             </div>
 
-            <div class="copyright">
-               <div class="copyright__title">
-                  vývojář:
-               </div>
-               <a class="copyright__link" href="#">Mizza</a>
-            </div>
-         </div>
+            <label class="checkbox-field">
+               <input class="custom-checkbox  visually-hidden" type="checkbox" name="remember" checked>
+               <span class="checkbox-replacer"></span>
+               zapamatovat
+            </label>
+
+            <a class="restore-link" href="#">připomenout heslo</a>
+            <button class="btn" type="submit">přihlásit se</button>
+         </form>
+         <p>poprvé na našem webu? <a class="sign-up-link" href="#">Registrovat!</a></p>
       </div>
-   </footer>
+
+
+   </div>
+
+
 
 
 

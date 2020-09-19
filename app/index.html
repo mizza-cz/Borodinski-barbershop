@@ -11,203 +11,243 @@
 </head>
 
 <body>
+   <div class="wrapper">
+      <div class="content">
+         <header class="header">
+            <div class="container">
+               <div class="header__inner">
+                  <div class="header__btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                  <nav class="menu">
 
-   <header class="header">
-      <div class="container">
-         <div class="header__inner">
-            <div class="header__btn">
-               <span></span>
-               <span></span>
-               <span></span>
+                     <ul class="menu__list">
+                        <li><a class="menu__list-item active-page" href="index.html">Úvod</a></li>
+                        <li><a class="menu__list-item" href="news.html">zprávy</a></li>
+                        <li><a class="menu__list-item" href="price-page.html">ceník</a></li>
+                        <li><a class="menu__list-item" href="shop.html">Obchod</a></li>
+                        <li><a class="menu__list-item" href="contact.html">kontakty</a></li>
+                     </ul>
+                  </nav>
+                  <div class="register">
+                     <a class="register__link" href="#">přihlásit</a>
+                  </div>
+               </div>
             </div>
-            <nav class="menu">
+         </header>
 
-               <ul class="menu__list">
-                  <li><a class="menu__list-item active-page" href="index.html">Úvod</a></li>
-                  <li><a class="menu__list-item" href="news.html">zprávy</a></li>
-                  <li><a class="menu__list-item" href="price-page.html">ceník</a></li>
-                  <li><a class="menu__list-item" href="shop.html">Obchod</a></li>
-                  <li><a class="menu__list-item" href="contact.html">kontakty</a></li>
+         <main class="main main-page" style="background-image: url(images/main-bg.jpg);">
+
+            <section class="advantages">
+               <div class="container">
+                  <div class="advantages__logo">
+                     <img src="images/logo.png" alt="">
+                  </div>
+                  <div class="advantages__inner">
+                     <div class="advantages__item">
+                        <h3 class="advantages__item-title">
+                           rychle
+                        </h3>
+                        <p class="advantages__item-text">
+                           DĚLÁME RYCHLÉ PRÁCE! DVĚ HODINY LETOU NEZNÁMÉ A JSTE ŠŤASTNÝM VLASTNÍKEM STYLOVÉHO VLASU!
+                        </p>
+                     </div>
+                     <div class="advantages__item">
+                        <h3 class="advantages__item-title">
+                           super
+                        </h3>
+                        <p class="advantages__item-text">
+                           ZAPOMNĚTE, JAK SE STŘIHALI PŘED. UDĚLÁME VÁS FOTBALEM NEBO FILMOVOU HVĚZDOU! V KAŽDÉM PŘÍPADU
+                           EXTERNÍ.
+                        </p>
+                     </div>
+                     <div class="advantages__item">
+                        <h3 class="advantages__item-title">
+                           draho
+                        </h3>
+                        <p class="advantages__item-text">
+                           NAŠI MISTŘI JSOU PROFESIONÁLI VE SVÉ FIRMĚ A NEMOHOU BÝT LACNO. NENABÍZÍ CENA KONKRÉTNÍ STAV?
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="news-blog">
+               <div class="container">
+                  <div class="news-blog__inner">
+                     <div class="news-wrap">
+                        <h4 class="main__title">
+                           novinky
+                        </h4>
+                        <a class="news__text" href="#">
+                           LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT
+                           LABORE ET DOLORE UT LABORE ET DOLORE
+
+                        </a>
+                        <span>11 srpna</span>
+                        <a class="news__text" href="#">
+                           LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT
+                           LABORE ET DOLORE UT LABORE ET DOLORE
+
+                        </a>
+                        <span>18 srpna</span>
+                        <div class="news__btn btn-page">
+                           více novinek
+                        </div>
+                     </div>
+                     <div class="gallery">
+                        <h4 class="main__title">
+                           fotogalerie
+                        </h4>
+                        <div class="gallery__inner">
+                           <a class="gallery__link" href="images/gallery-1.jpg" title="Открыть в полном размере"
+                              target="_blank">
+                              <img class="gallery__link-img" src="images/gallery-1.jpg" width="286" height="164"
+                                 alt="foto 1">
+                           </a>
+                           <a class="gallery__link" href="images/gallery-2.jpg" title="Открыть в полном размере"
+                              target="_blank">
+                              <img class="gallery__link-img" src="images/gallery-2.jpg" width="286" height="164"
+                                 alt="foto 2">
+                           </a>
+                           <a class="gallery__link" href="images/gallery-3.jpg" title="Открыть в полном размере"
+                              target="_blank">
+                              <img class="gallery__link-img" src="images/gallery-3.jpg" width="286" height="164"
+                                 alt="foto 3">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </section>
+
+            <section class="information">
+               <div class="container">
+                  <div class="information__inner">
+                     <div class="information__contacts">
+                        <h4 class="main__title">
+                           Kontaktní informace
+                        </h4>
+                        <ul class="information__address">
+                           <li>Barbershop "Borodinski"</li>
+                           <li>nám. Svobody 96, 602 00 Brno-střed</li>
+                           <li><a class="information__address-tel" href="tel:+420775521123">tel : +420 775 521 123 </a>
+                           </li>
+                        </ul>
+                        <div class="information__workstime">
+                           <div class="information__workstime-title">
+                              Otevírací doba
+                           </div>
+                           <p>Pon-Pát od 10:00 do 22:00</p>
+                           <p>Sob-Ned od 11:00 do 18:00</p>
+                        </div>
+
+                        <a class="information__link btn-page" href="contact.html">Jak se dostanete</a>
+
+
+                     </div>
+
+                     <div class="information__appointment">
+                        <h4 class="main__title">
+                           objednat se
+                        </h4>
+                        <p class="information__appointment-text">
+                           Uveďte svůj požadovaný datum a čas a my se s vámi spojíme, abychom potvrdili vaši rezervaci
+                        </p>
+                        <form class="form">
+                           <label class="form__label"><span>datum</span>
+                              <input class="form__input" type="text" name="date" placeholder="20.10.2020">
+                           </label>
+                           <label class="form__label"> <span>čas</span>
+                              <input class="form__input" type="text" name="time" placeholder="13:00">
+                           </label>
+                           <label class="form__label"> <span>Vaše Jméno</span>
+                              <input class="form__input" type="text" name="name" placeholder="Vaše jméno">
+                           </label>
+                           <label class="form__label"> <span>telefonní číslo</span>
+                              <input class="form__input" type="text" name="phone" placeholder="mobilní číslo">
+                           </label>
+
+
+
+                           <button class="form__btn btn-page" type="submit">odeslat</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <ul class="footer__address">
+                  <li>Barbershop "Borodinski"</li>
+                  <li>nám. Svobody 96, 602 00 Brno-střed</li>
+                  <li><a class="footer__address-link " href="contact.html">Jak nás najdete?</a></li>
+                  <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
                </ul>
-            </nav>
-            <div class="register">
-               <a class="register__link" href="#">přihlásit</a>
+
+               <div class="footer__social">
+                  <div class="footer__social-title">
+                     Buďme přátelé
+                  </div>
+                  <div class="footer__box">
+                     <a class="footer__box-icon icon-twitter" href="#"></a>
+                     <a class="footer__box-icon icon-facebook-f" href="#"></a>
+                     <a class="footer__box-icon icon-instagram" href="#"></a>
+                  </div>
+
+               </div>
+
+               <div class="copyright">
+                  <div class="copyright__title">
+                     vývojář:
+                  </div>
+                  <a class="copyright__link" href="#">Mizza</a>
+               </div>
             </div>
          </div>
+      </footer>
+      <div class="modal-overlay"></div>
+
+      <div class="modal-content-form">
+         <h1 class="main__title">osobní účet</h1>
+         <p class="login__subtitle">ZADEJTE SVÉ jméno A HESLO</p>
+         <form class="login-form" action="login.html" method="post">
+            <div class="form-field-group login-name">
+               <input id="login-field" class="login-field  login-form-field  form-field" type="text" name="login"
+                  placeholder="JMÉNO" required>
+            </div>
+
+            <div class="form-field-group login-pass ">
+               <input id="password-field" class="password-field  login-form-field  form-field" type="password"
+                  name="password" placeholder="Heslo" required>
+
+            </div>
+
+            <label class="checkbox-field">
+               <input class="custom-checkbox  visually-hidden" type="checkbox" name="remember" checked>
+               <span class="checkbox-replacer"></span>
+               zapamatovat
+            </label>
+
+            <a class="restore-link" href="#">připomenout heslo</a>
+            <button class="btn" type="submit">přihlásit se</button>
+         </form>
+         <p>poprvé na našem webu? <a class="sign-up-link" href="#">Registrovat!</a></p>
       </div>
-   </header>
-
-   <main class="main" style="background-image: url(images/main-bg.jpg);">
-
-      <section class="advantages">
-         <div class="container">
-            <div class="advantages__logo">
-               <img src="images/logo.png" alt="">
-            </div>
-            <div class="advantages__inner">
-               <div class="advantages__item">
-                  <h3 class="advantages__item-title">
-                     БЫСТРО
-                  </h3>
-                  <p class="advantages__item-text">
-                     МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
-                     СТРИЖКИ-МИНУТКИ!
-                  </p>
-               </div>
-               <div class="advantages__item">
-                  <h3 class="advantages__item-title">
-                     БЫСТРО
-                  </h3>
-                  <p class="advantages__item-text">
-                     МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
-                     СТРИЖКИ-МИНУТКИ!
-                  </p>
-               </div>
-               <div class="advantages__item">
-                  <h3 class="advantages__item-title">
-                     БЫСТРО
-                  </h3>
-                  <p class="advantages__item-text">
-                     МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
-                     СТРИЖКИ-МИНУТКИ!
-                  </p>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section class="news-blog">
-         <div class="container">
-            <div class="news-blog__inner">
-               <div class="news">
-                  <h4 class="main__title">
-                     novinky
-                  </h4>
-                  <a class="news__text" href="#">
-                     НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
-
-                  </a>
-                  <span>11 srpna</span>
-                  <a class="news__text" href="#">
-                     В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
-                     ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
-
-                  </a>
-                  <span>18 srpna</span>
-                  <div class="news__btn btn-page">
-                     více novinek
-                  </div>
-               </div>
-               <div class="gallery">
-                  <h4 class="main__title">
-                     fotogalerie
-                  </h4>
-                  <div class="gallery__inner">
-                     <div class="gallery__item">
-                        <img class="gallery__item-img" src="images/gallery-1.jpg" alt="">
-                     </div>
-                     <!-- <div class="gallery__item">
-                        <img class="gallery__item-img" src="images/gallery-2.jpg" alt="">
-                     </div>
-                     <div class="gallery__item">
-                        <img class="gallery__item-img" src="images/gallery-3.jpg" alt="">
-                     </div> -->
-                  </div>
-               </div>
-            </div>
-
-         </div>
-      </section>
-
-      <section class="information">
-         <div class="container">
-            <div class="information__inner">
-               <div class="information__contacts">
-                  <h4 class="main__title">
-                     Kontaktní informace
-                  </h4>
-                  <ul class="information__address">
-                     <li>Barbershop "Borodinski"</li>
-                     <li>nám. Svobody 96, 602 00 Brno-střed</li>
-                     <li><a class="information__address-tel" href="tel:+420775521123">tel : +420 775 521 123 </a></li>
-                  </ul>
-                  <div class="information__workstime">
-                     <div class="information__workstime-title">
-                        Otevírací doba
-                     </div>
-                     <p>Pon-Pát od 10:00 do 22:00</p>
-                     <p>Sob-Ned od 11:00 do 18:00</p>
-                  </div>
-
-                  <a class="information__link btn-page" href="contact.html">Jak se dostanete</a>
-
-
-               </div>
-
-               <div class="information__appointment">
-                  <h4 class="main__title">
-                     objednat se
-                  </h4>
-                  <p class="information__appointment-text">
-                     Uveďte svůj požadovaný datum a čas a my se s vámi spojíme, abychom potvrdili vaši rezervaci
-                  </p>
-                  <form class="form">
-                     <label class="form__label"><span>datum</span>
-                        <input class="form__input" type="text" name="date" placeholder="20.10.2020">
-                     </label>
-                     <label class="form__label"> <span>čas</span>
-                        <input class="form__input" type="text" name="time" placeholder="13:00">
-                     </label>
-                     <label class="form__label"> <span>Vaše Jméno</span>
-                        <input class="form__input" type="text" name="name" placeholder="Vaše jméno">
-                     </label>
-                     <label class="form__label"> <span>telefonní číslo</span>
-                        <input class="form__input" type="text" name="phone" placeholder="mobilní číslo">
-                     </label>
+      <div class="modal-content-photo"></div>
+   </div>
 
 
 
-                     <button class="form__btn btn-page" type="submit">odeslat</button>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </section>
-   </main>
 
-
-
-   <footer class="footer">
-      <div class="container">
-         <div class="footer__inner">
-            <ul class="footer__address">
-               <li>Barbershop "Borodinski"</li>
-               <li>nám. Svobody 96, 602 00 Brno-střed</li>
-               <li><a class="footer__address-link " href="contact.html">Jak nás najdete?</a></li>
-               <li><a class="footer__address-tel" href="tel:+420775521123">tel : +420 775 521 123</a></li>
-            </ul>
-
-            <div class="footer__social">
-               <div class="footer__social-title">
-                  Buďme přátelé
-               </div>
-               <div class="footer__box">
-                  <a class="footer__box-icon icon-twitter" href="#"></a>
-                  <a class="footer__box-icon icon-facebook-f" href="#"></a>
-                  <a class="footer__box-icon icon-instagram" href="#"></a>
-               </div>
-
-            </div>
-
-            <div class="copyright">
-               <div class="copyright__title">
-                  vývojář:
-               </div>
-               <a class="copyright__link" href="#">Mizza</a>
-            </div>
-         </div>
-      </div>
-   </footer>
 
 
 

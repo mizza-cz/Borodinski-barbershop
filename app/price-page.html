@@ -28,7 +28,7 @@
                      <ul class="menu__list">
 
                         <li><a class="menu__list-item" href="news.html">zprávy</a></li>
-                        <li><a class="menu__list-item" href="price-page.html">ceník</a></li>
+                        <li><a class="menu__list-item active-page" href="price-page.html">ceník</a></li>
                         <li><a class="menu__list-item" href="shop.html">Obchod</a></li>
                         <li><a class="menu__list-item" href="contact.html">kontakty</a></li>
                      </ul>
@@ -45,7 +45,7 @@
             <div class="breadcrumbs">
                <div class="container">
                   <div class="breadcrumbs__inner">
-                     <h5 class="breadcrumbs__title">ceník</h5>
+                     <h5 class="main__title">ceník</h5>
                      <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__list-item">
                            <a href="#">Úvod</a>
@@ -65,9 +65,9 @@
                   </h1>
                   <div class="price__box">
                      <div class="resources">
-                        <div class="resources__title">
+                        <h2 class="content-title">
                            používáme pouze ty nejlepší prostředky:
-                        </div>
+                        </h2>
                         <ul class="resources__list">
                            <li class="resources__list-text">Baxter of California</li>
                            <li class="resources__list-text">Mr Natty</li>
@@ -76,9 +76,9 @@
                         </ul>
                      </div>
                      <div class="price-box">
-                        <div class="price-box__title">
+                        <h2 class="content-title">
                            ceny za služby našich partnerů:
-                        </div>
+                        </h2>
                         <table class="prices-box__table">
                            <tr>
                               <td>střih vlasů</td>
@@ -97,9 +97,9 @@
                   </div>
 
                   <div class="about">
-                     <div class="about__title">
+                     <h2 class="content-title">
                         pár slov o nás :
-                     </div>
+                     </h2>
                      <div class="about__line">
                         <p class="about__line-text">
                            naše holičství se zabývá výhradně účesy pro muže.
@@ -150,6 +150,34 @@
       </footer>
 
 
+      <div class="modal-overlay"></div>
+
+      <div class="modal-content-form">
+         <h1 class="main__title">osobní účet</h1>
+         <p class="login__subtitle">ZADEJTE SVÉ jméno A HESLO</p>
+         <form class="login-form" action="login.html" method="post">
+            <div class="form-field-group login-name">
+               <input id="login-field" class="login-field  login-form-field  form-field" type="text" name="login"
+                  placeholder="JMÉNO" required>
+            </div>
+
+            <div class="form-field-group login-pass ">
+               <input id="password-field" class="password-field  login-form-field  form-field" type="password"
+                  name="password" placeholder="Heslo" required>
+
+            </div>
+
+            <label class="checkbox-field">
+               <input class="custom-checkbox  visually-hidden" type="checkbox" name="remember" checked>
+               <span class="checkbox-replacer"></span>
+               zapamatovat
+            </label>
+
+            <a class="restore-link" href="#">připomenout heslo</a>
+            <button class="btn" type="submit">přihlásit se</button>
+         </form>
+         <p>poprvé na našem webu? <a class="sign-up-link" href="#">Registrovat!</a></p>
+      </div>
    </div>
 
 

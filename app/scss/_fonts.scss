@@ -28,9 +28,7 @@
    font-style: normal;
    font-display: block;
  }
- 
- [class^="icon-"], [class*=" icon-"] {
-   
+ [class^="icon-"], [class*=" icon-"] { 
    font-family: 'icomoon' !important;
    speak: never;
    font-style: normal;
@@ -44,15 +42,21 @@
    -moz-osx-font-smoothing: grayscale;
  }
  
- .icon-twitter:before {
-   content: "\f099";
- }
- .icon-facebook:before {
-   content: "\f09a";
- }
- .icon-facebook-f:before {
-   content: "\f09a";
- }
- .icon-instagram:before {
-   content: "\f16d";
- }
+ .icon-user:before {
+  content: "\f007";
+}
+.icon-lock:before {
+  content: "\f023";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}

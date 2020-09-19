@@ -44,7 +44,7 @@
             <div class="breadcrumbs">
                <div class="container">
                   <div class="breadcrumbs__inner">
-                     <h5 class="breadcrumbs__title">zprávy</h5>
+                     <h5 class="main__title">zprávy</h5>
                      <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__list-item">
                            <a href="#">Úvod</a>
@@ -185,6 +185,34 @@
             </div>
          </div>
       </footer>
+
+      <div class="modal-overlay"></div>
+      <div class="modal-content-form">
+         <h1 class="main__title">osobní účet</h1>
+         <p class="login__subtitle">ZADEJTE SVÉ jméno A HESLO</p>
+         <form class="login-form" action="login.html" method="post">
+            <div class="form-field-group login-name">
+               <input id="login-field" class="login-field  login-form-field  form-field" type="text" name="login"
+                  placeholder="JMÉNO" required>
+            </div>
+
+            <div class="form-field-group login-pass ">
+               <input id="password-field" class="password-field  login-form-field  form-field" type="password"
+                  name="password" placeholder="Heslo" required>
+
+            </div>
+
+            <label class="checkbox-field">
+               <input class="custom-checkbox  visually-hidden" type="checkbox" name="remember" checked>
+               <span class="checkbox-replacer"></span>
+               zapamatovat
+            </label>
+
+            <a class="restore-link" href="#">připomenout heslo</a>
+            <button class="btn" type="submit">přihlásit se</button>
+         </form>
+         <p>poprvé na našem webu? <a class="sign-up-link" href="login.html">Registrovat!</a></p>
+      </div>
    </div>
 
 
